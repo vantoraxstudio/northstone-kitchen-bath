@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Northstone Kitchen &amp; Bath | Kitchen and Bathroom Remodeling (Demo)</title>
+  <meta name="description" content="Northstone Kitchen &amp; Bath is a fictional remodeling contractor used in a portfolio demo. Explore kitchen and bathroom remodeling ideas and request a free quote.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&amp;family=Inter:wght@400;500;600;700&amp;display=swap">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="demo-bar">Portfolio demonstration: Northstone Kitchen &amp; Bath is a fictional business.</div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Northstone Kitchen &amp; Bath, home page">
+        <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><rect width="40" height="40" rx="3" fill="#183B2B"/><path d="M20 6l3.2 11.2L34 20l-10.8 2.8L20 34l-3.2-11.2L6 20l10.8-2.8z" fill="#F7F5EF"/></svg>
+        <span class="brand-text"><span class="brand-name">Northstone</span><span class="brand-sub">Kitchen &amp; Bath</span></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open main menu">
+        <span class="menu-toggle__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span class="menu-toggle__label">Menu</span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="index.html" aria-current="page">Home</a></li>
+          <li><a class="nav-link" href="about.html">About</a></li>
+          <li>
+            <button class="dropdown-toggle" type="button" aria-expanded="false" aria-controls="services-menu">Services<span class="chev" aria-hidden="true"></span></button>
+            <ul id="services-menu" class="dropdown">
+              <li><a href="services.html">Services Overview</a></li>
+              <li><a href="kitchen-remodeling.html">Kitchen Remodeling</a></li>
+              <li><a href="bathroom-remodeling.html">Bathroom Remodeling</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link" href="projects.html">Projects</a></li>
+          <li><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-cta-item"><a class="btn btn--primary" href="contact.html">Request a Free Quote</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- A. Hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-media">
+        <img src="https://images.unsplash.com/photo-1769326541248-5e09a8ace25b?auto=format&amp;fit=crop&amp;w=1800&amp;q=70" width="1800" height="1200" fetchpriority="high" alt="Elegant kitchen with floor-to-ceiling greige cabinetry and a walnut-topped island with three stools">
+      </div>
+      <div class="container hero-inner">
+        <p class="eyebrow">Thoughtfully designed. Beautifully built.</p>
+        <h1 id="hero-title">Spaces That Feel Like Home.</h1>
+        <p class="hero-copy">Discover kitchen and bathroom remodeling shaped around your style, your needs, and the way you live.</p>
+        <div class="btn-row">
+          <a class="btn btn--light" href="contact.html">Request a Free Quote</a>
+          <a class="btn btn--outline-light" href="projects.html">Explore Our Projects</a>
+        </div>
+        <p class="hero-note">Illustrative stock photograph. Northstone Kitchen &amp; Bath is a fictional business and this site is a portfolio demonstration.</p>
+      </div>
+    </section>
+
+    <!-- B. Value proposition -->
+    <section class="section" aria-labelledby="values-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Our approach</p>
+          <h2 id="values-title">Four principles behind every plan</h2>
+          <p>A remodel goes best when design, craft and communication are considered together from the very first conversation.</p>
+        </div>
+        <div class="principles reveal">
+          <article class="principle">
+            <span class="principle__num" aria-hidden="true">01</span>
+            <h3>Design with Purpose</h3>
+            <p>Every layout choice starts with how you cook, bathe, gather and store, so the finished room works as well as it looks.</p>
+          </article>
+          <article class="principle">
+            <span class="principle__num" aria-hidden="true">02</span>
+            <h3>Quality in the Details</h3>
+            <p>Edges, reveals, hardware and finishes are specified with care, because small details shape how a room feels every day.</p>
+          </article>
+          <article class="principle">
+            <span class="principle__num" aria-hidden="true">03</span>
+            <h3>Clear Project Communication</h3>
+            <p>You should know what is happening, what comes next and what decisions are needed, in plain language.</p>
+          </article>
+          <article class="principle">
+            <span class="principle__num" aria-hidden="true">04</span>
+            <h3>Thoughtful Planning</h3>
+            <p>Careful scoping and material selection up front help the project move more smoothly once work begins.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- C. Company introduction -->
+    <section class="section section--white" aria-labelledby="intro-title">
+      <div class="container split split--wide-media">
+        <div class="split__media stack-media reveal">
+          <figure class="media media--land">
+            <img src="https://images.unsplash.com/photo-1641823911769-c55f23c25143?auto=format&amp;fit=crop&amp;w=1200&amp;q=70" width="1200" height="900" loading="lazy" alt="Modern kitchen with pale grey cabinets, stainless steel appliances and a clean countertop">
+            <figcaption class="media-caption">Illustrative image</figcaption>
+          </figure>
+          <figure class="media media--square media--inset">
+            <img src="https://images.unsplash.com/photo-1646592491820-49bafd614c0e?auto=format&amp;fit=crop&amp;w=700&amp;q=70" width="700" height="700" loading="lazy" alt="Bathroom with a built-in tub, vanity sink and light grey tile">
+          </figure>
+        </div>
+        <div class="split__text reveal">
+          <p class="eyebrow">About Northstone</p>
+          <h2 id="intro-title">Designed Around the Way You Live</h2>
+          <p class="lede">A great kitchen or bathroom is rarely about a single dramatic feature. It is about how the whole space supports your routine.</p>
+          <p>Thoughtful planning, practical layouts and carefully selected finishes can help homeowners create rooms that work better for everyday life: clear paths to move through, storage within easy reach, lighting that suits each task and materials that are comfortable to live with.</p>
+          <p>We begin with listening, then translate what we hear into a plan you can review, question and refine before work starts.</p>
+          <a class="link-arrow" href="about.html">Learn about our approach</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- D. Services preview -->
+    <section class="section" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Services</p>
+          <h2 id="services-title">What we help homeowners plan</h2>
+        </div>
+        <div class="card-grid card-grid--3">
+          <article class="service-card reveal">
+            <figure class="media media--land">
+              <img src="https://images.unsplash.com/photo-1769745241584-be9b8227e126?auto=format&amp;fit=crop&amp;w=1000&amp;q=70" width="1000" height="750" loading="lazy" alt="Bright kitchen with white cabinets and warm wooden countertops">
+            </figure>
+            <div class="service-card__body">
+              <h3>Kitchen Remodeling</h3>
+              <p>Cabinetry, countertops, islands, lighting and layouts planned around how your household cooks and gathers.</p>
+              <a class="link-arrow" href="kitchen-remodeling.html">Explore kitchens</a>
+            </div>
+          </article>
+          <article class="service-card reveal">
+            <figure class="media media--land">
+              <img src="https://images.unsplash.com/photo-1757787737175-cd3eb263a264?auto=format&amp;fit=crop&amp;w=1000&amp;q=70" width="1000" height="750" loading="lazy" alt="Modern walk-in shower with black fixtures and tiled walls">
+            </figure>
+            <div class="service-card__body">
+              <h3>Bathroom Remodeling</h3>
+              <p>Vanities, showers, tile and fixtures chosen to make the room calmer, easier to use and easier to clean.</p>
+              <a class="link-arrow" href="bathroom-remodeling.html">Explore bathrooms</a>
+            </div>
+          </article>
+          <article class="service-card reveal">
+            <figure class="media media--land">
+              <img src="https://images.unsplash.com/photo-1682888813795-192fca4a10d9?auto=format&amp;fit=crop&amp;w=1000&amp;q=70" width="1000" height="750" loading="lazy" alt="Spacious kitchen with a large center island, ready for planning discussions">
+            </figure>
+            <div class="service-card__body">
+              <h3>Design &amp; Project Planning</h3>
+              <p>Layout options, material comparisons and a clear scope so decisions are made calmly, before construction begins.</p>
+              <a class="link-arrow" href="services.html">See all services</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- E. Featured project concepts -->
+    <section class="section section--sand" aria-labelledby="concepts-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Featured project concepts</p>
+          <h2 id="concepts-title">Ideas to start the conversation</h2>
+          <p>Four illustrative concepts showing the kinds of spaces we can help you plan. Select a card to open its details.</p>
+        </div>
+        <div class="concept-grid reveal">
+          <a class="concept-card" href="projects.html?project=modern-oak-kitchen">
+            <img src="https://images.unsplash.com/photo-1589268395705-ecd1dca58cb9?auto=format&amp;fit=crop&amp;w=1000&amp;q=70" width="1000" height="1000" loading="lazy" alt="Warm wood kitchen cabinetry with a sink and island">
+            <div class="concept-card__body"><span class="tag">Kitchen concept</span><h3>The Modern Oak Kitchen</h3><span class="concept-card__cta">View details</span></div>
+          </a>
+          <a class="concept-card" href="projects.html?project=calm-retreat-bathroom">
+            <img src="https://images.unsplash.com/photo-1646974400439-8472d58bb19e?auto=format&amp;fit=crop&amp;w=1000&amp;q=70" width="1000" height="1000" loading="lazy" alt="Bright bathroom with a deep bathtub beside a large window">
+            <div class="concept-card__body"><span class="tag">Bathroom concept</span><h3>The Calm Retreat Bathroom</h3><span class="concept-card__cta">View details</span></div>
+          </a>
+          <a class="concept-card" href="projects.html?project=contemporary-family-kitchen">
+            <img src="https://images.unsplash.com/photo-1682888813795-192fca4a10d9?auto=format&amp;fit=crop&amp;w=1000&amp;q=70" width="1000" height="1000" loading="lazy" alt="Large contemporary kitchen with a central island and marble-look counters">
+            <div class="concept-card__body"><span class="tag">Kitchen concept</span><h3>The Contemporary Family Kitchen</h3><span class="concept-card__cta">View details</span></div>
+          </a>
+          <a class="concept-card" href="projects.html?project=timeless-vanity-suite">
+            <img src="https://images.unsplash.com/photo-1682888818704-6dc91e9d7532?auto=format&amp;fit=crop&amp;w=1000&amp;q=70" width="1000" height="1000" loading="lazy" alt="Bathroom with green vanity cabinets and a marble-look shower">
+            <div class="concept-card__body"><span class="tag">Bathroom concept</span><h3>The Timeless Vanity Suite</h3><span class="concept-card__cta">View details</span></div>
+          </a>
+        </div>
+        <p class="notice notice--spaced">These are illustrative portfolio concepts using stock photographs as visual references. They are not verified projects completed by Northstone Kitchen &amp; Bath, which is a fictional company.</p>
+        <div class="btn-row"><a class="btn btn--secondary" href="projects.html">View all project concepts</a></div>
+      </div>
+    </section>
+
+    <!-- F. Before / after concept comparison -->
+    <section class="section section--dark" aria-labelledby="compare-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Style comparison</p>
+          <h2 id="compare-title">From traditional warmth to light and open</h2>
+          <p>A side-by-side look at two design directions a homeowner might weigh when updating a kitchen.</p>
+        </div>
+        <div class="compare reveal">
+          <figure class="compare__panel">
+            <div class="media">
+              <span class="compare__label">Before</span>
+              <img src="https://images.unsplash.com/photo-1589268395705-ecd1dca58cb9?auto=format&amp;fit=crop&amp;w=1100&amp;q=70" width="1100" height="825" loading="lazy" alt="Kitchen with traditional brown wood cabinetry, shown as a 'before' style concept">
+            </div>
+            <figcaption>Before (concept): traditional, closed-in wood cabinetry.</figcaption>
+          </figure>
+          <figure class="compare__panel">
+            <div class="media">
+              <span class="compare__label compare__label--after">After</span>
+              <img src="https://images.unsplash.com/photo-1769745241584-be9b8227e126?auto=format&amp;fit=crop&amp;w=1100&amp;q=70" width="1100" height="825" loading="lazy" alt="Bright, open kitchen with white cabinets and wood countertops, shown as an 'after' style concept">
+            </div>
+            <figcaption>After (concept): light cabinetry, wood-tone counters and an open feel.</figcaption>
+          </figure>
+        </div>
+        <p class="notice notice--spaced">Illustrative comparison only. These are two different kitchens from stock photographs, shown to compare design directions. They are not the same room and not a verified renovation by Northstone Kitchen &amp; Bath, a fictional company.</p>
+      </div>
+    </section>
+
+    <!-- G. Remodeling process -->
+    <section class="section" aria-labelledby="process-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">The remodeling process</p>
+          <h2 id="process-title">Four clear steps from idea to finished room</h2>
+          <p>Every project is different, but the path is familiar. Timelines depend on scope, materials and scheduling, and are confirmed in writing during planning.</p>
+        </div>
+        <ol class="steps steps--light reveal">
+          <li class="step"><h3>Discover</h3><p>We talk through your goals, how you use the space, what is not working and what you would like to keep.</p></li>
+          <li class="step"><h3>Design &amp; Plan</h3><p>Layout options, materials and a written scope are reviewed together so you can make informed decisions.</p></li>
+          <li class="step"><h3>Remodel</h3><p>Work proceeds in a planned sequence, with regular updates on progress and any decisions that need your input.</p></li>
+          <li class="step"><h3>Final Walkthrough</h3><p>We review the finished space with you, note any touch-ups and explain how to care for your new surfaces.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- H. Why planning matters -->
+    <section class="section section--white" aria-labelledby="planning-title">
+      <div class="container split split--reverse">
+        <div class="split__media reveal">
+          <figure class="media media--tall">
+            <img src="https://images.unsplash.com/photo-1593465713677-e078861911d7?auto=format&amp;fit=crop&amp;w=1000&amp;q=70" width="1000" height="1250" loading="lazy" alt="Calm bathroom with a white freestanding tub and softly tiled walls">
+            <figcaption class="media-caption">Illustrative image</figcaption>
+          </figure>
+        </div>
+        <div class="split__text reveal">
+          <p class="eyebrow">Why planning matters</p>
+          <h2 id="planning-title">Why homeowners value good planning</h2>
+          <p class="lede">The most satisfying remodels tend to share one thing: decisions were made thoughtfully, in the right order.</p>
+          <ul class="check-list">
+            <li><strong>Clear project goals</strong><span>Knowing what the space must do makes every later choice easier.</span></li>
+            <li><strong>Thoughtful material selection</strong><span>Comparing options for look, upkeep and daily use before ordering anything.</span></li>
+            <li><strong>Better use of space</strong><span>Layouts that improve movement, storage and light, not just surfaces.</span></li>
+            <li><strong>Consistent communication</strong><span>A shared understanding of scope, decisions and next steps along the way.</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- I. What matters -->
+    <section class="section" aria-labelledby="matters-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Our commitments</p>
+          <h2 id="matters-title">What Matters in Every Project</h2>
+        </div>
+        <div class="matters reveal">
+          <div class="matters__item"><h3>Clear communication</h3><p>Plain-language updates and written scopes so there are no surprises about what is included.</p></div>
+          <div class="matters__item"><h3>Considered design</h3><p>Choices tied to how you live, not just to what is currently in style.</p></div>
+          <div class="matters__item"><h3>Respect for the home</h3><p>Protecting your living areas and keeping the work site tidy while projects are underway.</p></div>
+          <div class="matters__item"><h3>Attention to details</h3><p>Careful finishing and a final walkthrough so the small things get the same care as the big ones.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- J. Final CTA -->
+    <section class="cta-band" aria-labelledby="cta-title">
+      <div class="cta-band__bg"><img src="https://images.unsplash.com/photo-1757787737175-cd3eb263a264?auto=format&amp;fit=crop&amp;w=1600&amp;q=60" width="1600" height="1067" loading="lazy" alt=""></div>
+      <div class="container">
+        <h2 id="cta-title">Let’s Plan a Space You’ll Love</h2>
+        <p>Tell us about your renovation goals and start a conversation about your project.</p>
+        <div class="btn-row"><a class="btn btn--light" href="contact.html">Request a Free Quote</a></div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand" href="index.html" aria-label="Northstone Kitchen &amp; Bath, home page">
+          <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><rect width="40" height="40" rx="3" fill="#F7F5EF"/><path d="M20 6l3.2 11.2L34 20l-10.8 2.8L20 34l-3.2-11.2L6 20l10.8-2.8z" fill="#183B2B"/></svg>
+          <span class="brand-text"><span class="brand-name">Northstone</span><span class="brand-sub">Kitchen &amp; Bath</span></span>
+        </a>
+        <p>Thoughtfully designed kitchens and bathrooms that balance beautiful finishes, practical function and the way you live.</p>
+        <a class="btn btn--light btn--small" href="contact.html">Request a Free Quote</a>
+      </div>
+      <div>
+        <h2>Quick links</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Services</h2>
+        <ul>
+          <li><a href="services.html">Services Overview</a></li>
+          <li><a href="kitchen-remodeling.html">Kitchen Remodeling</a></li>
+          <li><a href="bathroom-remodeling.html">Bathroom Remodeling</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Contact (demo details)</h2>
+        <dl class="footer-demo">
+          <div><dt>Phone:</dt> <dd>(555) 010-0100 (fictional)</dd></div>
+          <div><dt>Email:</dt> <dd>hello@example.com (fictional)</dd></div>
+          <div><dt>Address:</dt> <dd>No real address. Demo only.</dd></div>
+        </dl>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span data-year>2026</span> Northstone Kitchen &amp; Bath (fictional). All rights reserved.</p>
+        <p>This website is a portfolio demonstration created by Vantorax Studio. Northstone Kitchen &amp; Bath is not a real business, and all projects, images and contact details are illustrative.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
