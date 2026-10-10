@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Remodeling Services Overview | Northstone Kitchen &amp; Bath (Demo)</title>
+  <meta name="description" content="Explore kitchen remodeling, bathroom remodeling and design and project planning services from the fictional Northstone Kitchen &amp; Bath. Portfolio demonstration site.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&amp;family=Inter:wght@400;500;600;700&amp;display=swap">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="demo-bar">Portfolio demonstration: Northstone Kitchen &amp; Bath is a fictional business.</div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Northstone Kitchen &amp; Bath, home page">
+        <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><rect width="40" height="40" rx="3" fill="#183B2B"/><path d="M20 6l3.2 11.2L34 20l-10.8 2.8L20 34l-3.2-11.2L6 20l10.8-2.8z" fill="#F7F5EF"/></svg>
+        <span class="brand-text"><span class="brand-name">Northstone</span><span class="brand-sub">Kitchen &amp; Bath</span></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open main menu">
+        <span class="menu-toggle__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span class="menu-toggle__label">Menu</span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="about.html">About</a></li>
+          <li>
+            <button class="dropdown-toggle is-current" type="button" aria-expanded="false" aria-controls="services-menu">Services<span class="chev" aria-hidden="true"></span></button>
+            <ul id="services-menu" class="dropdown">
+              <li><a href="services.html" aria-current="page">Services Overview</a></li>
+              <li><a href="kitchen-remodeling.html">Kitchen Remodeling</a></li>
+              <li><a href="bathroom-remodeling.html">Bathroom Remodeling</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link" href="projects.html">Projects</a></li>
+          <li><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-cta-item"><a class="btn btn--primary" href="contact.html">Request a Free Quote</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="page-hero__grid">
+        <div class="page-hero__text">
+          <ul class="breadcrumbs"><li><a href="index.html">Home</a></li><li aria-current="page">Services</li></ul>
+          <p class="eyebrow">Services overview</p>
+          <h1 id="page-title">Kitchens, bathrooms and the planning that connects them</h1>
+          <p>Three focused services, each shaped around your home, your habits and a clear, written plan.</p>
+          <ul class="chips" aria-label="Services">
+            <li>Kitchen Remodeling</li>
+            <li>Bathroom Remodeling</li>
+            <li>Design &amp; Project Planning</li>
+          </ul>
+        </div>
+        <div class="page-hero__media">
+          <img src="https://images.unsplash.com/photo-1682888813795-192fca4a10d9?auto=format&amp;fit=crop&amp;w=1400&amp;q=70" width="1400" height="1050" fetchpriority="high" alt="Spacious kitchen with a large center island and marble-look countertops">
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">What we offer</p>
+          <h2 id="services-title">Choose the service that fits your project</h2>
+          <p>Most homeowners start with a single room. Others plan a kitchen and bathroom together. Either way, the process begins with the same careful conversation.</p>
+        </div>
+
+        <article class="service-block reveal" id="kitchen">
+          <figure class="media media--land service-block__media">
+            <img src="https://images.unsplash.com/photo-1769745241584-be9b8227e126?auto=format&amp;fit=crop&amp;w=1200&amp;q=70" width="1200" height="900" loading="lazy" alt="Bright kitchen with white cabinets and wooden worktops">
+            <figcaption class="media-caption">Illustrative image</figcaption>
+          </figure>
+          <div class="service-block__text">
+            <span class="service-block__num">01</span>
+            <h2>Kitchen Remodeling</h2>
+            <p>From refreshed cabinetry to a fully reworked layout, we plan kitchens that make cooking, hosting and everyday routines easier.</p>
+            <div class="service-block__cols">
+              <div>
+                <h4>Key considerations</h4>
+                <ul><li>Cabinetry and storage</li><li>Countertops and surfaces</li><li>Islands and circulation</li><li>Lighting and fixtures</li></ul>
+              </div>
+              <div>
+                <h4>Homeowner benefits</h4>
+                <ul><li>A layout that fits how you cook</li><li>Storage that is easy to reach</li><li>Surfaces suited to daily use</li></ul>
+              </div>
+            </div>
+            <div class="btn-row">
+              <a class="btn btn--primary" href="kitchen-remodeling.html">Explore Kitchen Remodeling</a>
+              <a class="btn btn--secondary" href="contact.html">Request a Quote</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="service-block service-block--reverse reveal" id="bathroom">
+          <figure class="media media--land service-block__media">
+            <img src="https://images.unsplash.com/photo-1593465713677-e078861911d7?auto=format&amp;fit=crop&amp;w=1200&amp;q=70" width="1200" height="900" loading="lazy" alt="Calm bathroom with a white freestanding tub and tiled walls">
+            <figcaption class="media-caption">Illustrative image</figcaption>
+          </figure>
+          <div class="service-block__text">
+            <span class="service-block__num">02</span>
+            <h2>Bathroom Remodeling</h2>
+            <p>We help you shape bathrooms that feel calm, work hard and are straightforward to keep clean, whether compact or generous.</p>
+            <div class="service-block__cols">
+              <div>
+                <h4>Key considerations</h4>
+                <ul><li>Vanities and storage</li><li>Showers and bath areas</li><li>Tile and surface choices</li><li>Fixtures, ventilation and lighting</li></ul>
+              </div>
+              <div>
+                <h4>Homeowner benefits</h4>
+                <ul><li>A more comfortable daily routine</li><li>Easier cleaning and upkeep</li><li>A layout that uses space well</li></ul>
+              </div>
+            </div>
+            <div class="btn-row">
+              <a class="btn btn--primary" href="bathroom-remodeling.html">Explore Bathroom Remodeling</a>
+              <a class="btn btn--secondary" href="contact.html">Request a Quote</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="service-block reveal" id="planning">
+          <figure class="media media--land service-block__media">
+            <img src="https://images.unsplash.com/photo-1641823911769-c55f23c25143?auto=format&amp;fit=crop&amp;w=1200&amp;q=70" width="1200" height="900" loading="lazy" alt="Modern kitchen with pale cabinetry, representing a planned and organized layout">
+            <figcaption class="media-caption">Illustrative image</figcaption>
+          </figure>
+          <div class="service-block__text">
+            <span class="service-block__num">03</span>
+            <h2>Design &amp; Project Planning</h2>
+            <p>Planning is where a remodel is won. We help you define goals, compare layout and material options and agree on a written scope.</p>
+            <div class="service-block__cols">
+              <div>
+                <h4>Key considerations</h4>
+                <ul><li>Goals, priorities and constraints</li><li>Layout and material options</li><li>Scope of work and sequencing</li><li>Questions to settle before building</li></ul>
+              </div>
+              <div>
+                <h4>Homeowner benefits</h4>
+                <ul><li>Clearer decisions, made earlier</li><li>A shared understanding of the plan</li><li>Fewer open questions when work starts</li></ul>
+              </div>
+            </div>
+            <div class="btn-row">
+              <a class="btn btn--primary" href="contact.html">Discuss Your Plans</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section--sand" aria-labelledby="start-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Not sure where to begin?</p>
+          <h2 id="start-title">Start with the room that matters most</h2>
+        </div>
+        <div class="card-grid card-grid--2 reveal">
+          <article class="feature-card">
+            <h3>Planning a kitchen?</h3>
+            <p>See how we think about cabinetry, surfaces, islands and lighting, then browse illustrative kitchen concepts.</p>
+            <a class="link-arrow" href="kitchen-remodeling.html">Kitchen Remodeling</a>
+          </article>
+          <article class="feature-card">
+            <h3>Planning a bathroom?</h3>
+            <p>Explore vanities, showers, tile and fixtures, and see illustrative bathroom concepts for inspiration.</p>
+            <a class="link-arrow" href="bathroom-remodeling.html">Bathroom Remodeling</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band" aria-labelledby="cta-title">
+      <div class="cta-band__bg"><img src="https://images.unsplash.com/photo-1646974400439-8472d58bb19e?auto=format&amp;fit=crop&amp;w=1600&amp;q=60" width="1600" height="1067" loading="lazy" alt=""></div>
+      <div class="container">
+        <h2 id="cta-title">Let’s Plan a Space You’ll Love</h2>
+        <p>Tell us about your renovation goals and start a conversation about your project.</p>
+        <div class="btn-row"><a class="btn btn--light" href="contact.html">Request a Free Quote</a></div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand" href="index.html" aria-label="Northstone Kitchen &amp; Bath, home page">
+          <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><rect width="40" height="40" rx="3" fill="#F7F5EF"/><path d="M20 6l3.2 11.2L34 20l-10.8 2.8L20 34l-3.2-11.2L6 20l10.8-2.8z" fill="#183B2B"/></svg>
+          <span class="brand-text"><span class="brand-name">Northstone</span><span class="brand-sub">Kitchen &amp; Bath</span></span>
+        </a>
+        <p>Thoughtfully designed kitchens and bathrooms that balance beautiful finishes, practical function and the way you live.</p>
+        <a class="btn btn--light btn--small" href="contact.html">Request a Free Quote</a>
+      </div>
+      <div>
+        <h2>Quick links</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Services</h2>
+        <ul>
+          <li><a href="services.html">Services Overview</a></li>
+          <li><a href="kitchen-remodeling.html">Kitchen Remodeling</a></li>
+          <li><a href="bathroom-remodeling.html">Bathroom Remodeling</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Contact (demo details)</h2>
+        <dl class="footer-demo">
+          <div><dt>Phone:</dt> <dd>(555) 010-0100 (fictional)</dd></div>
+          <div><dt>Email:</dt> <dd>hello@example.com (fictional)</dd></div>
+          <div><dt>Address:</dt> <dd>No real address. Demo only.</dd></div>
+        </dl>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span data-year>2026</span> Northstone Kitchen &amp; Bath (fictional). All rights reserved.</p>
+        <p>This website is a portfolio demonstration created by Vantorax Studio. Northstone Kitchen &amp; Bath is not a real business, and all projects, images and contact details are illustrative.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
