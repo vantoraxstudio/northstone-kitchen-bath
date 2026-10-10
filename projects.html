@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Project Gallery | Northstone Kitchen &amp; Bath (Demo)</title>
+  <meta name="description" content="Browse six illustrative kitchen and bathroom project concepts from the fictional Northstone Kitchen &amp; Bath. Filter by category and open details. Portfolio demonstration site.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&amp;family=Inter:wght@400;500;600;700&amp;display=swap">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="demo-bar">Portfolio demonstration: Northstone Kitchen &amp; Bath is a fictional business.</div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Northstone Kitchen &amp; Bath, home page">
+        <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><rect width="40" height="40" rx="3" fill="#183B2B"/><path d="M20 6l3.2 11.2L34 20l-10.8 2.8L20 34l-3.2-11.2L6 20l10.8-2.8z" fill="#F7F5EF"/></svg>
+        <span class="brand-text"><span class="brand-name">Northstone</span><span class="brand-sub">Kitchen &amp; Bath</span></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open main menu">
+        <span class="menu-toggle__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span class="menu-toggle__label">Menu</span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="about.html">About</a></li>
+          <li>
+            <button class="dropdown-toggle" type="button" aria-expanded="false" aria-controls="services-menu">Services<span class="chev" aria-hidden="true"></span></button>
+            <ul id="services-menu" class="dropdown">
+              <li><a href="services.html">Services Overview</a></li>
+              <li><a href="kitchen-remodeling.html">Kitchen Remodeling</a></li>
+              <li><a href="bathroom-remodeling.html">Bathroom Remodeling</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link" href="projects.html" aria-current="page">Projects</a></li>
+          <li><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-cta-item"><a class="btn btn--primary" href="contact.html">Request a Free Quote</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="page-hero__grid">
+        <div class="page-hero__text">
+          <ul class="breadcrumbs"><li><a href="index.html">Home</a></li><li aria-current="page">Projects</li></ul>
+          <p class="eyebrow">Project gallery</p>
+          <h1 id="page-title">Concepts to spark your own ideas</h1>
+          <p>Six illustrative kitchen and bathroom concepts showing styles, materials and layouts we might explore together.</p>
+        </div>
+        <div class="page-hero__media">
+          <img src="https://images.unsplash.com/photo-1646974400439-8472d58bb19e?auto=format&amp;fit=crop&amp;w=1400&amp;q=70" width="1400" height="1050" fetchpriority="high" alt="Bright bathroom with a deep bathtub beside a window">
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="gallery-title">
+      <div class="container">
+        <h2 id="gallery-title" class="sr-only">Project concepts</h2>
+
+        <div class="notice">All projects shown are illustrative portfolio concepts using visual references. They are not represented as verified projects completed by this fictional company.</div>
+
+        <div class="filters" role="group" aria-label="Filter projects by category">
+          <button class="filter-btn" type="button" data-filter="all" aria-pressed="true">All Projects</button>
+          <button class="filter-btn" type="button" data-filter="Kitchens" aria-pressed="false">Kitchens</button>
+          <button class="filter-btn" type="button" data-filter="Bathrooms" aria-pressed="false">Bathrooms</button>
+        </div>
+        <p class="filter-status" id="filter-status" role="status" aria-live="polite">Showing 6 concepts in All Projects.</p>
+
+        <div class="project-grid">
+
+          <article class="project-card" data-category="Kitchens">
+            <figure class="media">
+              <img src="https://images.unsplash.com/photo-1589268395705-ecd1dca58cb9?auto=format&amp;fit=crop&amp;w=1000&amp;q=70" width="1000" height="750" loading="lazy" alt="Warm wood kitchen cabinetry with a sink and island, used as a visual reference">
+              <figcaption class="media-caption">Illustrative image</figcaption>
+            </figure>
+            <div class="project-card__body">
+              <span class="tag">Kitchens</span>
+              <h3>The Modern Oak Kitchen</h3>
+              <p>Warm timber cabinetry, soft layered lighting and a practical work layout.</p>
+              <button class="btn btn--secondary btn--small" type="button" data-project="modern-oak-kitchen" aria-label="View details: The Modern Oak Kitchen">View Details</button>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="Bathrooms">
+            <figure class="media">
+              <img src="https://images.unsplash.com/photo-1646974400439-8472d58bb19e?auto=format&amp;fit=crop&amp;w=1000&amp;q=70" width="1000" height="750" loading="lazy" alt="Bright bathroom with a large bathtub beside a window, used as a visual reference">
+              <figcaption class="media-caption">Illustrative image</figcaption>
+            </figure>
+            <div class="project-card__body">
+              <span class="tag">Bathrooms</span>
+              <h3>The Calm Retreat Bathroom</h3>
+              <p>A spa-inspired space with a soaking tub, natural light and a quiet palette.</p>
+              <button class="btn btn--secondary btn--small" type="button" data-project="calm-retreat-bathroom" aria-label="View details: The Calm Retreat Bathroom">View Details</button>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="Kitchens">
+            <figure class="media">
+              <img src="https://images.unsplash.com/photo-1682888813795-192fca4a10d9?auto=format&amp;fit=crop&amp;w=1000&amp;q=70" width="1000" height="750" loading="lazy" alt="Large contemporary kitchen with a central island and marble-look counters, used as a visual reference">
+              <figcaption class="media-caption">Illustrative image</figcaption>
+            </figure>
+            <div class="project-card__body">
+              <span class="tag">Kitchens</span>
+              <h3>The Contemporary Family Kitchen</h3>
+              <p>A generous island, durable surfaces and clear zones for a busy household.</p>
+              <button class="btn btn--secondary btn--small" type="button" data-project="contemporary-family-kitchen" aria-label="View details: The Contemporary Family Kitchen">View Details</button>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="Bathrooms">
+            <figure class="media">
+              <img src="https://images.unsplash.com/photo-1682888818704-6dc91e9d7532?auto=format&amp;fit=crop&amp;w=1000&amp;q=70" width="1000" height="750" loading="lazy" alt="Bathroom with green vanity cabinets and a marble-look shower, used as a visual reference">
+              <figcaption class="media-caption">Illustrative image</figcaption>
+            </figure>
+            <div class="project-card__body">
+              <span class="tag">Bathrooms</span>
+              <h3>The Timeless Vanity Suite</h3>
+              <p>A deep green vanity paired with stone-look tile and a clean glass shower.</p>
+              <button class="btn btn--secondary btn--small" type="button" data-project="timeless-vanity-suite" aria-label="View details: The Timeless Vanity Suite">View Details</button>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="Kitchens">
+            <figure class="media">
+              <img src="https://images.unsplash.com/photo-1769745241584-be9b8227e126?auto=format&amp;fit=crop&amp;w=1000&amp;q=70" width="1000" height="750" loading="lazy" alt="Bright minimalist kitchen with white cabinets and wooden countertops, used as a visual reference">
+              <figcaption class="media-caption">Illustrative image</figcaption>
+            </figure>
+            <div class="project-card__body">
+              <span class="tag">Kitchens</span>
+              <h3>The Bright Open Kitchen</h3>
+              <p>Light cabinetry, wood-tone counters and open sightlines for an airy feel.</p>
+              <button class="btn btn--secondary btn--small" type="button" data-project="bright-open-kitchen" aria-label="View details: The Bright Open Kitchen">View Details</button>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="Bathrooms">
+            <figure class="media">
+              <img src="https://images.unsplash.com/photo-1593465713677-e078861911d7?auto=format&amp;fit=crop&amp;w=1000&amp;q=70" width="1000" height="750" loading="lazy" alt="Minimalist bathroom with a white tub and tiled walls, used as a visual reference">
+              <figcaption class="media-caption">Illustrative image</figcaption>
+            </figure>
+            <div class="project-card__body">
+              <span class="tag">Bathrooms</span>
+              <h3>The Warm Minimalist Bathroom</h3>
+              <p>A pared-back palette with warm finish accents and a freestanding tub.</p>
+              <button class="btn btn--secondary btn--small" type="button" data-project="warm-minimalist-bathroom" aria-label="View details: The Warm Minimalist Bathroom">View Details</button>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band" aria-labelledby="cta-title">
+      <div class="cta-band__bg"><img src="https://images.unsplash.com/photo-1769326541248-5e09a8ace25b?auto=format&amp;fit=crop&amp;w=1600&amp;q=60" width="1600" height="1067" loading="lazy" alt=""></div>
+      <div class="container">
+        <h2 id="cta-title">Found something you like?</h2>
+        <p>Tell us what caught your eye and we’ll talk through how it could work in your home.</p>
+        <div class="btn-row"><a class="btn btn--light" href="contact.html">Request a Free Quote</a></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Reusable project details modal -->
+  <div id="project-modal" class="modal">
+    <div class="modal__backdrop"></div>
+    <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-description">
+      <button class="modal__close" type="button" aria-label="Close project details">Close <span aria-hidden="true">&times;</span></button>
+      <div class="modal__media">
+        <img id="modal-image" src="" alt="" width="1400" height="1050">
+      </div>
+      <div class="modal__body">
+        <p class="tag" id="modal-category"></p>
+        <h2 id="modal-title"></h2>
+        <p id="modal-description"></p>
+        <ul class="check-list" id="modal-points"></ul>
+        <p class="notice notice--spaced">Illustrative portfolio concept using a stock photograph as a visual reference. Not a verified project completed by this fictional company.</p>
+        <div class="btn-row"><a class="btn btn--primary" href="contact.html">Request a Free Quote</a></div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand" href="index.html" aria-label="Northstone Kitchen &amp; Bath, home page">
+          <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><rect width="40" height="40" rx="3" fill="#F7F5EF"/><path d="M20 6l3.2 11.2L34 20l-10.8 2.8L20 34l-3.2-11.2L6 20l10.8-2.8z" fill="#183B2B"/></svg>
+          <span class="brand-text"><span class="brand-name">Northstone</span><span class="brand-sub">Kitchen &amp; Bath</span></span>
+        </a>
+        <p>Thoughtfully designed kitchens and bathrooms that balance beautiful finishes, practical function and the way you live.</p>
+        <a class="btn btn--light btn--small" href="contact.html">Request a Free Quote</a>
+      </div>
+      <div>
+        <h2>Quick links</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Services</h2>
+        <ul>
+          <li><a href="services.html">Services Overview</a></li>
+          <li><a href="kitchen-remodeling.html">Kitchen Remodeling</a></li>
+          <li><a href="bathroom-remodeling.html">Bathroom Remodeling</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Contact (demo details)</h2>
+        <dl class="footer-demo">
+          <div><dt>Phone:</dt> <dd>(555) 010-0100 (fictional)</dd></div>
+          <div><dt>Email:</dt> <dd>hello@example.com (fictional)</dd></div>
+          <div><dt>Address:</dt> <dd>No real address. Demo only.</dd></div>
+        </dl>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span data-year>2026</span> Northstone Kitchen &amp; Bath (fictional). All rights reserved.</p>
+        <p>This website is a portfolio demonstration created by Vantorax Studio. Northstone Kitchen &amp; Bath is not a real business, and all projects, images and contact details are illustrative.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
