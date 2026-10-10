@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Request a Free Quote | Contact Northstone Kitchen &amp; Bath (Demo)</title>
+  <meta name="description" content="Try the project inquiry form for the fictional Northstone Kitchen &amp; Bath. This portfolio demo validates your entries but does not send them to a real business.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&amp;family=Inter:wght@400;500;600;700&amp;display=swap">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="demo-bar">Portfolio demonstration: Northstone Kitchen &amp; Bath is a fictional business.</div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Northstone Kitchen &amp; Bath, home page">
+        <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><rect width="40" height="40" rx="3" fill="#183B2B"/><path d="M20 6l3.2 11.2L34 20l-10.8 2.8L20 34l-3.2-11.2L6 20l10.8-2.8z" fill="#F7F5EF"/></svg>
+        <span class="brand-text"><span class="brand-name">Northstone</span><span class="brand-sub">Kitchen &amp; Bath</span></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open main menu">
+        <span class="menu-toggle__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span class="menu-toggle__label">Menu</span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="about.html">About</a></li>
+          <li>
+            <button class="dropdown-toggle" type="button" aria-expanded="false" aria-controls="services-menu">Services<span class="chev" aria-hidden="true"></span></button>
+            <ul id="services-menu" class="dropdown">
+              <li><a href="services.html">Services Overview</a></li>
+              <li><a href="kitchen-remodeling.html">Kitchen Remodeling</a></li>
+              <li><a href="bathroom-remodeling.html">Bathroom Remodeling</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link" href="projects.html">Projects</a></li>
+          <li><a class="nav-link" href="contact.html" aria-current="page">Contact</a></li>
+          <li class="nav-cta-item"><a class="btn btn--primary" href="contact.html" aria-current="page">Request a Free Quote</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="page-hero__grid">
+        <div class="page-hero__text">
+          <ul class="breadcrumbs"><li><a href="index.html">Home</a></li><li aria-current="page">Contact</li></ul>
+          <p class="eyebrow">Request a free quote</p>
+          <h1 id="page-title">Let’s talk about your project</h1>
+          <p>Tell us about your kitchen or bathroom plans. A few details are enough to start the conversation.</p>
+        </div>
+        <div class="page-hero__media">
+          <img src="https://images.unsplash.com/photo-1646592491820-49bafd614c0e?auto=format&amp;fit=crop&amp;w=1400&amp;q=70" width="1400" height="1050" fetchpriority="high" alt="Bathroom with a built-in tub, vanity and light tile">
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="form-title">
+      <div class="container contact-layout">
+
+        <div class="reveal">
+          <p class="eyebrow">Get in touch</p>
+          <h2>Start the conversation</h2>
+          <p class="lede">Whether you are sketching early ideas or ready to plan, we’d like to hear what you have in mind.</p>
+
+          <div class="info-card">
+            <h3>Contact details (demo only)</h3>
+            <dl>
+              <div><dt>Phone</dt><dd>(555) 010-0100, fictional</dd></div>
+              <div><dt>Email</dt><dd>hello@example.com, fictional</dd></div>
+              <div><dt>Service area</dt><dd>Not a real service area. Demo only.</dd></div>
+            </dl>
+          </div>
+
+          <h3 class="next-title">What happens next</h3>
+          <ol class="next-steps">
+            <li><strong>You share the basics</strong><span>Project type, location and a few notes about your goals.</span></li>
+            <li><strong>We review your request</strong><span>In a real project, we would read your details and consider the scope.</span></li>
+            <li><strong>We follow up</strong><span>A real contractor would then reach out to discuss next steps and a possible visit.</span></li>
+          </ol>
+        </div>
+
+        <div class="form-card reveal">
+          <h2 id="form-title">Project inquiry form</h2>
+          <p class="notice">This is a demonstration form. Your entries are checked in your browser but are not sent anywhere, and no real business will receive them. Please do not enter sensitive personal information.</p>
+
+          <form id="quote-form" novalidate aria-labelledby="form-title">
+            <p class="field-hint form-note">Fields marked <span class="req" aria-hidden="true">*</span><span class="sr-only">with an asterisk</span> are required.</p>
+            <div class="form-grid">
+
+              <div class="field">
+                <label for="name">Full name <span class="req" aria-hidden="true">*</span></label>
+                <input type="text" id="name" name="name" autocomplete="name" required aria-required="true" aria-describedby="name-error">
+                <p class="error-msg" id="name-error"></p>
+              </div>
+
+              <div class="field">
+                <label for="email">Email address <span class="req" aria-hidden="true">*</span></label>
+                <input type="email" id="email" name="email" autocomplete="email" inputmode="email" required aria-required="true" aria-describedby="email-error">
+                <p class="error-msg" id="email-error"></p>
+              </div>
+
+              <div class="field">
+                <label for="phone">Phone number <span class="opt">(optional)</span></label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel" inputmode="tel" aria-describedby="phone-error">
+                <p class="error-msg" id="phone-error"></p>
+              </div>
+
+              <div class="field">
+                <label for="project-type">Project type <span class="req" aria-hidden="true">*</span></label>
+                <select id="project-type" name="project-type" required aria-required="true" aria-describedby="project-type-error">
+                  <option value="">Select a project type</option>
+                  <option value="Kitchen Remodeling">Kitchen Remodeling</option>
+                  <option value="Bathroom Remodeling">Bathroom Remodeling</option>
+                  <option value="Both Kitchen &amp; Bathroom">Both Kitchen &amp; Bathroom</option>
+                  <option value="Other Interior Project">Other Interior Project</option>
+                </select>
+                <p class="error-msg" id="project-type-error"></p>
+              </div>
+
+              <div class="field">
+                <label for="budget">Estimated budget <span class="opt">(optional)</span></label>
+                <select id="budget" name="budget" aria-describedby="budget-hint">
+                  <option value="">Prefer not to say</option>
+                  <option value="Illustrative range A">Illustrative range A: under $15,000</option>
+                  <option value="Illustrative range B">Illustrative range B: $15,000 to $30,000</option>
+                  <option value="Illustrative range C">Illustrative range C: $30,000 to $60,000</option>
+                  <option value="Illustrative range D">Illustrative range D: over $60,000</option>
+                </select>
+                <p class="field-hint" id="budget-hint">Ranges are illustrative placeholders for this demo, not price estimates.</p>
+              </div>
+
+              <div class="field">
+                <label for="location">Project location <span class="req" aria-hidden="true">*</span></label>
+                <input type="text" id="location" name="location" autocomplete="address-level2" required aria-required="true" aria-describedby="location-hint location-error">
+                <p class="field-hint" id="location-hint">City and state, or ZIP code.</p>
+                <p class="error-msg" id="location-error"></p>
+              </div>
+
+              <div class="field field--full">
+                <label for="start">Desired project start <span class="opt">(optional)</span></label>
+                <select id="start" name="start">
+                  <option value="">Not sure yet</option>
+                  <option value="As soon as possible">As soon as possible</option>
+                  <option value="Within 1 to 3 months">Within 1 to 3 months</option>
+                  <option value="In 3 to 6 months">In 3 to 6 months</option>
+                  <option value="Just exploring ideas">Just exploring ideas</option>
+                </select>
+              </div>
+
+              <div class="field field--full">
+                <label for="details">Project details <span class="req" aria-hidden="true">*</span></label>
+                <textarea id="details" name="details" rows="6" required aria-required="true" aria-describedby="details-hint details-error"></textarea>
+                <p class="field-hint" id="details-hint">Describe the space, what you would like to change and any style ideas.</p>
+                <p class="error-msg" id="details-error"></p>
+              </div>
+
+              <div class="field field--full">
+                <div class="field--check">
+                  <input type="checkbox" id="consent" name="consent" value="yes" required aria-required="true" aria-describedby="consent-error">
+                  <label for="consent">I understand this is a demonstration form and that my information will not be sent to a real business. <span class="req" aria-hidden="true">*</span></label>
+                </div>
+                <p class="error-msg" id="consent-error"></p>
+              </div>
+
+            </div>
+
+            <div class="form-actions">
+              <button class="btn btn--primary" type="submit">Submit Demo Inquiry</button>
+            </div>
+            <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand" href="index.html" aria-label="Northstone Kitchen &amp; Bath, home page">
+          <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><rect width="40" height="40" rx="3" fill="#F7F5EF"/><path d="M20 6l3.2 11.2L34 20l-10.8 2.8L20 34l-3.2-11.2L6 20l10.8-2.8z" fill="#183B2B"/></svg>
+          <span class="brand-text"><span class="brand-name">Northstone</span><span class="brand-sub">Kitchen &amp; Bath</span></span>
+        </a>
+        <p>Thoughtfully designed kitchens and bathrooms that balance beautiful finishes, practical function and the way you live.</p>
+        <a class="btn btn--light btn--small" href="contact.html">Request a Free Quote</a>
+      </div>
+      <div>
+        <h2>Quick links</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Services</h2>
+        <ul>
+          <li><a href="services.html">Services Overview</a></li>
+          <li><a href="kitchen-remodeling.html">Kitchen Remodeling</a></li>
+          <li><a href="bathroom-remodeling.html">Bathroom Remodeling</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Contact (demo details)</h2>
+        <dl class="footer-demo">
+          <div><dt>Phone:</dt> <dd>(555) 010-0100 (fictional)</dd></div>
+          <div><dt>Email:</dt> <dd>hello@example.com (fictional)</dd></div>
+          <div><dt>Address:</dt> <dd>No real address. Demo only.</dd></div>
+        </dl>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span data-year>2026</span> Northstone Kitchen &amp; Bath (fictional). All rights reserved.</p>
+        <p>This website is a portfolio demonstration created by Vantorax Studio. Northstone Kitchen &amp; Bath is not a real business, and all projects, images and contact details are illustrative.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
